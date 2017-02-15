@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>the &#x1f44f;ifier</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 14px;
+        }
+        textarea {
+            width: 99%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            resize: none;
+            font-family: sans-serif;
+            font-size: 14px;
+        }
+        #outgroup, textarea {
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #outel {
+			border: 1px solid gray;
+			min-height: 2.5em;
+			flex: auto;
+			margin-right: 2px;
+        }
+        h1, p {
+            text-align: center;
+        }
+		p {
+			margin: 0.25em;
+		}
+        h1 {
+            font-size: 15px;
+        }
+        .tone {
+            padding: 2px;
+        }
+        .tone.selected {
+            border: 1px solid lightblue;
+        }
+		#outgroup {
+			display: flex;
+			align-items: flex-end;
+		}
+		#count {
+			flex: none;
+			color: gray;
+		}
+		#count.long {
+			color: darkred;
+		}
+    </style>
+</head>
+<body>
+    <h1>hey you guys &#x2192; hey &#x1f44f; you &#x1f44f; guys</h1>
+    <textarea id="inel" rows=2 placeholder="text to &#x1f44f;ify..."></textarea>
+	<div id="outgroup">
+		<div id="outel"></div>
+		<div id="count">140</div>
+	</div>
+    <p>skin tone:</p>
+    <p>
+        <span class="tone selected" data-tone="">&#x1f44f;</span>
+        <span class="tone" data-tone="&#x1F3FB;">&#x1f44f;&#x1F3FB;</span>
+        <span class="tone" data-tone="&#x1F3FC;">&#x1f44f;&#x1F3FC;</span>
+        <span class="tone" data-tone="&#x1F3FD;">&#x1f44f;&#x1F3FD;</span>
+        <span class="tone" data-tone="&#x1F3FE;">&#x1f44f;&#x1F3FE;</span>
+        <span class="tone" data-tone="&#x1F3FF;">&#x1f44f;&#x1F3FF;</span>
+    </p>
+    <script src="clap.js"></script>
+</body>
