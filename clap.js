@@ -7,7 +7,7 @@
         var out = inEl.value.split(/\s+/).join(` \uD83D\uDC4F${tone} `);
         outEl.innerText = out;
         // Counts by unicode code point, not grapheme, which is how Twitter does it
-        var outLength = 140 - [...out].length;
+        var outLength = 280 - [...out].length;
         count.innerText = outLength;
         if (outLength < 0) {
             count.classList.add('long');
